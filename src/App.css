@@ -1,38 +1,117 @@
-.App {
+.home, .form, .search, .recipe {
+  min-height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color:whitesmoke;
+  font-size: 20px;
+  
+}
+
+.myCocktails {
+  min-height: 700px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color:whitesmoke;
+  font-size: 10px;
+  text-align: center;
+ 
+}
+
+.recipeBox {
+  background-color: rgba(0, 0, 0, 0.589);
+  border: rgba(252, 252, 252, 0.705) solid 1px;
+  padding: 1rem;
+  width: 800px;
+  margin: 2rem 2rem;
+  display: inline-grid; 
+  box-shadow: 3px 4px black;
+  color:whitesmoke;
+  block-size: fit-content;
+}
+
+.tile, .searchBox, .input {
+  background-color: rgba(0, 0, 0, 0.589);
+  border: rgba(252, 252, 252, 0.705) solid 1px;
+  padding: 2rem;
+  width: 250px;
+  display: inline-grid;
+  margin: 2rem 2rem;
+  box-shadow: 3px 4px black;
+  block-size: fit-content;
+  border-radius: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
+}
+.NavBar {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  background: black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+table {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.image {
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  height: 400px;
 }
 
-.App-link {
-  color: #61dafb;
+.button { 
+  position: relative;
+  background-color: #000000;
+  border: none; 
+  border-radius: 5px; 
+  height: 40px;
+  width: max-content;
+  color: whitesmoke;
+  font-size: 16px;
+  justify-self: center;
+  margin: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.drinkList {
+  color: whitesmoke;
+  
 }
+
+.drinkList:hover {
+  color: blue;
+  
+}
+
+.submit {
+  position: relative;
+  background-color: #000000;
+  border: 1px; 
+  border-radius: 5px; 
+  height: 40px;
+  width: max-content;
+  color: whitesmoke;
+  font-size: 10px;
+  justify-self: center;
+  margin: 1rem;
+}
+
+button:hover {
+  background-color: whitesmoke;
+  border: black solid 1px;
+  color: black;
+} 
+
+

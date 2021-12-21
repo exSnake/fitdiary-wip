@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+
+import React from 'react'
+import MyCocktails from './containers/MyCocktails'
+import Home from './components/Home'
+import NavBar from './components/NavBar'
+import CocktailForm from './components/CocktailForm'
+import SearchCocktails from './components/SearchCocktails'
+import CocktailRecipe from './containers/CocktailRecipe'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Router>
+            <div className="App">
+                <NavBar/>
+                <Switch>
+                    <Route exact path='/' component={Home}/>
+                    <Route exact path='/search' component={SearchCocktails}/>
+                    <Route exact path='/recipe/:id' component={CocktailRecipe}/>
+                </Switch>
+            </div>
+        </Router>
+    );
 }
 
 export default App;
