@@ -10,16 +10,7 @@ import CocktailRecipe from './containers/CocktailRecipe'
 
 function App() {
     return (
-        <Router>
-            <div className="App">
-                <NavBar/>
-                <Switch>
-                    <Route exact path='/' component={Home}/>
-                    <Route exact path='/search' component={SearchCocktails}/>
-                    <Route exact path='/recipe/:id' component={CocktailRecipe}/>
-                </Switch>
-            </div>
-        </Router>
+
     );
 }
 
