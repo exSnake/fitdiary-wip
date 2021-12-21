@@ -10,7 +10,11 @@ import CocktailRecipe from './containers/CocktailRecipe'
 
 function App() {
     return (
-
+        <Router>
+            <div className="App">
+                
+            </div>
+        </Router>
     );
 }
 
